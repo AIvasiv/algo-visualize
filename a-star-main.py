@@ -119,8 +119,8 @@ def draw(win, grid, rows, width):
     draw_grid(win, rows, width)
     pygame.display.update()
     
-def get_clicked_position(pos, rows, width):
-    gap = width // total_rows
+def get_clicked_pos(pos, rows, width):
+    gap = width // rows
     y, x = pos
     
     row = y // gap
@@ -146,7 +146,7 @@ def main(win, width):
                 continue
             if pygame.mouse.get_pressed()[0]: # LEFT
                 
-                pos.pygame.mouse.get_pos()
+                pos =pygame.mouse.get_pos()
                 row, col = get_clicked_pos(pos, ROWS, width)
                 spot = grid[row][col]
                 if not start:

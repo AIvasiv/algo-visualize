@@ -13,4 +13,4 @@ def bubble_sort(unsorted_list):
                 swapped = True
     print(unsorted_list)
 
-bubble_sort2([12,6,13,7,87])
+bubble_sort([12,6,13,7,87])
